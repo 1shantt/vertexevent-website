@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vertex Event | Event Management Company in Delhi NCR</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="countdown.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
@@ -38,6 +39,89 @@
   <a href="#contact" onclick="closeMobileNav()">Contact</a>
   <button class="mobile-enquire" onclick="closeMobileNav(); openEnquiry()">Enquire Now</button>
 </div>
+
+<!-- EVENT COUNTDOWN + SLIDER (add before </body>, and see notes below) -->
+<section class="ev-countdown-section" id="ev-countdown">
+  <span class="section-tag reveal">Save The Date</span>
+  <span class="ev-countdown-date">6th September, 2026</span>
+  <h2 class="section-title reveal">Our Next <em>Big Event</em></h2>
+
+  <div class="ev-slider" id="evSlider">
+    <div class="ev-slides-track" id="evSlidesTrack">
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788253057/b9161a76-967c-46dc-9d7b-3ffa0cf1782b.jpg" alt="Event photo 1">
+        <div class="ev-caption">
+          <h3></h3>
+          </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788254749/48fd7555-8737-4ebd-aedf-eab6ba50e3da.jpg" alt="Event photo 2">
+        <div class="ev-caption">
+          <h3>Stage and Production</h3>
+        </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788254758/6ab8239c-69fa-41ef-861d-df284f647b40.jpg" alt="Event photo 3">
+        <div class="ev-caption">
+          <h3>Map</h3>
+        </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788254761/2d543ce7-9e7e-43e4-9bd0-2fbf4ce11b32.jpg" alt="Event photo 4">
+        <div class="ev-caption">
+          <h3>Table Charges</h3>
+        </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788254764/983aab66-74c7-4742-8c15-0148c289452f.jpg" alt="Event photo 5">
+        <div class="ev-caption">
+          <h3>Layout</h3>
+        </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788257297/424754c0-f28e-4c22-8673-46addeb837eb.jpg" alt="Event photo 6">
+        <div class="ev-caption">
+          <h3>Venue pics</h3>
+          </div>
+      </div>
+      <div class="ev-slide"><img src="https://res.cloudinary.com/dhbmv5srx/image/upload/v1788257324/3b8b5fac-6db3-422a-971f-e0ed352d39e1.jpg" alt="Event photo 7">
+        <div class="ev-caption">
+          <h3>Venue pics</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <button class="ev-slider-arrow ev-prev" id="evPrev" aria-label="Previous slide">‹</button>
+    <button class="ev-slider-arrow ev-next" id="evNext" aria-label="Next slide">›</button>
+
+    <div class="ev-dots" id="evDots"></div>
+  </div>
+
+  <div class="ev-countdown-wrap">
+    <div class="ev-countdown-label"></div>
+    <div class="ev-countdown" id="evCountdown">
+      <div class="ev-time-block">
+        <span class="ev-num" id="evDays">00</span>
+        <span class="ev-unit">Days</span>
+      </div>
+      <span class="ev-sep">:</span>
+      <div class="ev-time-block">
+        <span class="ev-num" id="evHours">00</span>
+        <span class="ev-unit">Hours</span>
+      </div>
+      <span class="ev-sep">:</span>
+      <div class="ev-time-block">
+        <span class="ev-num" id="evMinutes">00</span>
+        <span class="ev-unit">Minutes</span>
+      </div>
+      <span class="ev-sep">:</span>
+      <div class="ev-time-block">
+        <span class="ev-num" id="evSeconds">00</span>
+        <span class="ev-unit">Seconds</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <a href="https://sortmyscene.com/event/wat-da-duck-2-0-india-s-biggest-summer-sundowner-experience-sep-06-2026" target="_blank"><button class="book-btn"> Book Now</button></a>
+  </div>
+</section>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -399,5 +483,6 @@
   </div>
 </div>
 <script src="script.js"></script>
+<script src="countdown.js"></script>
 </body>
 </html>

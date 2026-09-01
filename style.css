@@ -73,6 +73,7 @@
     display: inline-block;
     margin-top: 40px;
     padding: 16px 40px;
+    border-radius: 12px;
     background: var(--gold);
     color: #0A0A0F;
     font-family: 'Montserrat', sans-serif;
@@ -136,7 +137,7 @@
   /* SECTIONS */
   section { padding: 100px 60px; }
   .section-tag { font-size: 0.65rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 60px; }
+  .section-title { font-family: serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 60px; }
   .section-title em { font-style: italic; color: var(--gold); }
   .gold-divider { width: 60px; height: 2px; background: var(--gold); margin-bottom: 40px; }
 
