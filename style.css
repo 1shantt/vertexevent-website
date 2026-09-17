@@ -148,7 +148,7 @@
   .service-card::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.5s ease; }
   .service-card:hover::before { width: 100%; }
   .service-card:hover { background: #1c1c27; }
-  .service-num { font-family: 'Playfair Display', serif; font-size: 4rem; color: rgba(201,168,76,0.08); font-weight: 900; position: absolute; top: 20px; right: 30px; line-height: 1; transition: color 0.4s; }
+  /* .service-num { font-family: 'Playfair Display', serif; font-size: 4rem; color: rgba(201,168,76,0.08); font-weight: 900; position: absolute; top: 20px; right: 30px; line-height: 1; transition: color 0.4s; } */
   .service-card:hover .service-num { color: rgba(201,168,76,0.15); }
   .service-icon { font-size: 1.8rem; margin-bottom: 20px; }
   .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 12px; font-weight: 700; }
